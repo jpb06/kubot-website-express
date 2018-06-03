@@ -1,0 +1,36 @@
+﻿extends _layout
+
+block content
+    div(class='bs-callout bs-callout-primary')
+        h5 Regions to watch
+
+        div(class='input-group mb-3')
+            input(type='text' class='form-control' placeholder='Region name' aria-label='Region name' aria-describedby='basic-addon2')
+            div(class='input-group-append')
+                span(class='input-group-text' id='basic-addon2') Ex: Liberty core space
+
+        div(class='input-group mb-3')
+            input(type='text' class='form-control' placeholder='System' aria-label='System' )
+            div(class='input-group-append')
+                button(class='btn btn-outline-secondary' type='button') Add
+        
+        div(class='list-group')
+            div(class='list-group-item') 
+                button(type="button" class="close" aria-label="Close")
+                    span(aria-hidden="true") &times;
+                h6 system
+                span 1, 2, 3
+
+            div(class='list-group-item')
+                 button(type="button" class="close" aria-label="Close")
+                    span(aria-hidden="true") &times;
+
+    div(class='bs-callout bs-callout-primary')
+        h5 Factions to watch
+
+    div(class='bs-callout bs-callout-primary')
+        h5 Guild related
+
+        div(class='card')
+            div(class='card-body')
+                p(class='card-text' id='')
